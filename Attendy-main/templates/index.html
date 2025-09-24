@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Attendly - Smart Attendance System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/css/extras.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div class="brand-icon">
+            <ion-icon name="qr-code-outline"></ion-icon>
+          </div>
+          <span class="brand-text">Attendly</span>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>🚀 Revolutionizing School Attendance</span>
+          </div>
+          <h1 class="hero-title">
+            Smart QR-Based
+            <span class="gradient-text">Attendance System</span>
+          </h1>
+          <p class="hero-description">
+            Transform your school's attendance tracking with our innovative QR code system. 
+            Seamless, secure, and designed for rural schools with offline-first technology.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://github.com/AyushCipher/QR-Attendance-System" target="_blank" class="btn btn-primary">
+              <ion-icon name="logo-github"></ion-icon>
+              View on GitHub
+            </a>
+            <a href="#features" class="btn btn-secondary">
+              <ion-icon name="play-outline"></ion-icon>
+              Learn More
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">99%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Schools</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Support</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="app-interface">
+                <div class="app-header">
+                  <div class="app-title">QR Scanner</div>
+                  <div class="app-status online">Online</div>
+                </div>
+                <div class="scanner-area">
+                  <div class="qr-frame">
+                    <div class="corner top-left"></div>
+                    <div class="corner top-right"></div>
+                    <div class="corner bottom-left"></div>
+                    <div class="corner bottom-right"></div>
+                  </div>
+                </div>
+                <div class="scan-result success">
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                  <span>Student marked present!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-cards">
+            <div class="card card-1">
+              <ion-icon name="people-outline"></ion-icon>
+              <span>Student Management</span>
+            </div>
+            <div class="card card-2">
+              <ion-icon name="analytics-outline"></ion-icon>
+              <span>Real-time Analytics</span>
+            </div>
+            <div class="card card-3">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+              <span>Secure & Private</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Powerful Features</h2>
+          <p class="section-subtitle">Everything you need for modern attendance management</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <ion-icon name="qr-code-outline"></ion-icon>
+            </div>
+            <h3>QR Code Integration</h3>
+            <p>Each student gets a unique QR code printed on their uniform. No cards or devices needed.</p>
+          </div>
+          <!-- <div class="feature-card">
+            <div class="feature-icon">
+              <ion-icon name="cloud-offline-outline"></ion-icon>
+            </div>
+            <h3>Offline First</h3>
+            <p>Works without internet connection. Data syncs automatically when network returns.</p>
+          </div> -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+            </div>
+            <h3>Secure & Private</h3>
+            <p>QR codes contain only random IDs. All data is encrypted before syncing to servers.</p>
+          </div>
+          <!-- <div class="feature-card">
+            <div class="feature-icon">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+            <h3>Smart Alerts</h3>
+            <p>Automatic SMS/email notifications for absent students and sync status updates.</p>
+          </div> -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <ion-icon name="analytics-outline"></ion-icon>
+            </div>
+            <h3>Real-time Reports</h3>
+            <p>Comprehensive dashboards for teachers and principals</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <ion-icon name="leaf-outline"></ion-icon>
+            </div>
+            <h3>Eco-Friendly</h3>
+            <p>No paper records, plastic cards, and no food wastage. Uses existing uniform distribution process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Transforming Education</h2>
+            <p class="about-description">
+              Schools in India still rely on traditional bookkeeping methods for maintaining records. 
+              This makes the process time-consuming and maintaining these records for a long time becomes difficult.
+            </p>
+            <p class="about-description">
+              Our solution digitizes the entire process. Each student receives a unique QR code printed 
+              on their uniform. Teachers use a mobile to scan these codes, automatically updating 
+              attendance in digital format.
+            </p>
+            <div class="about-benefits">
+              <div class="benefit-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Faster attendance marking</span>
+              </div>
+              <div class="benefit-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Digital record maintenance</span>
+              </div>
+              <div class="benefit-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Reduced food waste</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="process-steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>QR Generation</h4>
+                  <p>Unique codes printed on uniforms</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Quick Scan</h4>
+                  <p>Teachers scan with mobile </p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Auto Sync</h4>
+                  <p>Data syncs when online</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Action Section -->
+    <section class="action-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Start Scanning</h2>
+          <p class="section-subtitle">Choose your scanning mode and begin tracking attendance</p>
+        </div>
+        <div class="action-grid">
+          <div class="action-card">
+            <div class="action-icon">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+            <h3>Daily Attendance</h3>
+            <p>Mark student attendance for regular classes</p>
+            <a href="attendance" class="action-btn">Start Scanning</a>
+            <a href="data_attendance" class="view-btn">View Records</a>
+          </div>
+          <div class="action-card">
+            <div class="action-icon">
+              <ion-icon name="restaurant-outline"></ion-icon>
+            </div>
+            <h3>Mid-Day Meal</h3>
+            <p>Track meal distribution and consumption</p>
+            <a href="mid-day-meal" class="action-btn">Start Scanning</a>
+            <a href="data_mid_day_meal" class="view-btn">View Records</a>
+          </div>
+          <!-- <div class="action-card">
+            <div class="action-icon">
+              <ion-icon name="library-outline"></ion-icon>
+            </div>
+            <h3>Library Access</h3>
+            <p>Monitor library usage and book access</p>
+            <a href="library" class="action-btn">Start Scanning</a>
+            <a href="data_library" class="view-btn">View Records</a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-brand">
+              <div class="brand-icon">
+                <ion-icon name="qr-code-outline"></ion-icon>
+              </div>
+              <span class="brand-text">Attendly</span>
+            </div>
+            <p class="footer-description">
+              Revolutionizing school attendance with smart QR technology. 
+              Built for rural schools with offline-first approach.
+            </p>
+            <div class="social-links">
+              <a href="https://github.com/AyushCipher/QR-Attendance-System" target="_blank" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a href="https://www.linkedin.com/in/ayush-verma-dev" target="_blank" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="mailto:ayush_verma@srmap.edu.in" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/verma_ji_ayush/" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#home" target="_blank">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#" target="_blank">Documentation</a></li>
+              <li><a href="https://github.com/AyushCipher/QR-Attendance-System" target="_blank">GitHub</a></li>
+              <li><a href="#contact">Support</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>ayushdvlpr456@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+                <span>India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Team Cool Geeks. All rights reserved.</p>
+          <p>Built with ❤️ for Smart India Hackathon</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./static/js/main.min.js"></script>
+  </body>
+</html>
